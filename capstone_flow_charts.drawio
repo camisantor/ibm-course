@@ -1,0 +1,116 @@
+<mxfile host="app.diagrams.net" modified="2024-07-13T22:07:42.255Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="2B8NyITFor_C-1RbDVNp" version="24.6.5" type="device" pages="2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1434" dy="746" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="371" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Request rocket launch data from SpaceX API&lt;div&gt;response = requests.get(spacex_url)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="281.25" y="50" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Replace rocket ID with booster name&lt;div&gt;requests.get(&quot;https://api.spacexdata.com/v4/rockets/&quot;+str(x)).json()&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="178.75" y="220" width="385" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-0" value="Replace launchpad with launch site, longitude, and latitude&lt;div&gt;response = requests.get(&quot;https://api.spacexdata.com/v4/launchpads/&quot;+str(x)).json()&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="150" y="290" width="462.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-1" value="Replace payload with payload mass and orbit it is going to.&lt;div&gt;response = requests.get(&quot;https://api.spacexdata.com/v4/payloads/&quot;+load).json()&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="140" y="360" width="462.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-2" value="Replace cores with outcome of landing, type of landing, number of flight with that core, whether gridfins were used, whether core is reused, whether legs were used, landing pad used, block of core, number of times this core has been reused, and serial of core&lt;div&gt;response = requests.get(&quot;https://api.spacexdata.com/v4/payloads/&quot;+load).json()&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50.62" y="430" width="641.25" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-3" value="&lt;div&gt;Filter DataFrame to only in&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap; background-color: initial;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Replace%20rocket%20ID%20with%20booster%20name%26lt%3Bdiv%26gt%3Brequests.get(%26quot%3Bhttps%3A%2F%2Fapi.spacexdata.com%2Fv4%2Frockets%2F%26quot%3B%2Bstr(x)).json()%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D12%3Bglass%3D0%3BstrokeWidth%3D1%3Bshadow%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22178.75%22%20y%3D%22180%22%20width%3D%22385%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;clude Falcon 9 launches&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="178.74" y="530" width="385" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-4" value="&lt;div&gt;Deal with missing values. Fill in missing payload mass with mean payload mass.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="169.99" y="600" width="385" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-5" value="&lt;div&gt;Format data into DataFrame&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="281.24" y="150" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-6" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370.75" y="190" as="sourcePoint" />
+            <mxPoint x="370.75" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-7" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370.75" y="260" as="sourcePoint" />
+            <mxPoint x="370.75" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-8" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370.75" y="400" as="sourcePoint" />
+            <mxPoint x="370.75" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-9" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370.74" y="500" as="sourcePoint" />
+            <mxPoint x="370.74" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-12" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370.75" y="330" as="sourcePoint" />
+            <mxPoint x="370.75" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9OT8Yp299dsAIoWlXvLw-13" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370.75" y="570" as="sourcePoint" />
+            <mxPoint x="370.75" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370.75" y="590" />
+              <mxPoint x="370.75" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1zYharhuOFNAz9lWgECd" name="Page-2">
+    <mxGraphModel dx="1434" dy="746" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8uTN4s9-PSPBFxiQkBfp-1" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8uTN4s9-PSPBFxiQkBfp-2" target="8uTN4s9-PSPBFxiQkBfp-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="367.64" y="262" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8uTN4s9-PSPBFxiQkBfp-2" value="Request Falcon9 launch Wiki page&lt;div&gt;&lt;pre style=&quot;line-height: 16.25px; padding: 0 var(--jp-code-padding); color: rgb(33, 33, 33); font-size: 13px; text-align: start;&quot;&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span style=&quot;color: var(--jp-mirror-editor-operator-color); font-weight: bold;&quot; class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-operator-color); font-weight: bold;&quot; class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-punctuation-color);&quot; class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;static_url&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-punctuation-color);&quot; class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="237.01999999999998" y="119" width="261.75" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="8uTN4s9-PSPBFxiQkBfp-3" value="&lt;div&gt;Extract column and variable names from HTML table header&lt;/div&gt;&lt;div&gt;&lt;pre style=&quot;line-height: 16.25px; padding: 0 var(--jp-code-padding); color: rgb(33, 33, 33); font-size: 13px; text-align: start;&quot;&gt;&lt;span class=&quot;n&quot;&gt;html_tables&lt;/span&gt; &lt;span style=&quot;color: var(--jp-mirror-editor-operator-color); font-weight: bold;&quot; class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-operator-color); font-weight: bold;&quot; class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_all&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-punctuation-color);&quot; class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-string-color);&quot; class=&quot;s1&quot;&gt;&#39;table&#39;&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-punctuation-color);&quot; class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="194.89" y="302" width="348.87" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="8uTN4s9-PSPBFxiQkBfp-4" value="Create DataFrame by parsing launch HTML tables&lt;div&gt;&lt;pre style=&quot;line-height: 16.25px; padding: 0 var(--jp-code-padding); color: rgb(33, 33, 33); font-size: 13px; text-align: start;&quot;&gt;&lt;span class=&quot;n&quot;&gt;launch_dict&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-operator-color); font-weight: bold;&quot; class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-operator-color); font-weight: bold;&quot; class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fromkeys&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-punctuation-color);&quot; class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column_names&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-punctuation-color);&quot; class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="218.88" y="400" width="298" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="8uTN4s9-PSPBFxiQkBfp-9" value="&lt;div&gt;Create BeautifulSoup object from HTML response&lt;/div&gt;&lt;div&gt;&lt;pre style=&quot;line-height: 16.25px; padding: 0 var(--jp-code-padding); color: rgb(33, 33, 33); font-size: 13px; text-align: start;&quot;&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span style=&quot;color: var(--jp-mirror-editor-operator-color); font-weight: bold;&quot; class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-punctuation-color);&quot; class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-operator-color); font-weight: bold;&quot; class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span style=&quot;color: var(--jp-mirror-editor-punctuation-color);&quot; class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="191.99999999999997" y="216" width="351.76" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="8uTN4s9-PSPBFxiQkBfp-10" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8uTN4s9-PSPBFxiQkBfp-9" target="8uTN4s9-PSPBFxiQkBfp-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="367.39" y="302" as="sourcePoint" />
+            <mxPoint x="365.64" y="318" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8uTN4s9-PSPBFxiQkBfp-11" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="367.39" y="372" as="sourcePoint" />
+            <mxPoint x="367.39" y="402" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
